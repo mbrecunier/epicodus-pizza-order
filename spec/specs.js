@@ -7,4 +7,9 @@ describe('Pizza', function() {
     expect(testPizza.vegetables).to.eql(['spinach', 'olives']);
     expect(testPizza.meats).to.eql(['pepperoni', 'bacon']);
   });
+  it('has a method that will calculate price', function() {
+    var testPizza = new Pizza('small', 'pan', true, ['bell peppers', 'artichoke hearts', 'spinach'], ['sausage']);
+    testPizza.calculatePrice();
+    expect(testPizza.price).to.equal();
+  });
 });
