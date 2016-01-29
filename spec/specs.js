@@ -10,6 +10,6 @@ describe('Pizza', function() {
   it('has a method that will calculate price', function() {
     var testPizza = new Pizza('small', 'pan', true, ['bell peppers', 'artichoke hearts', 'spinach'], ['sausage']);
     testPizza.calculatePrice();
-    expect(testPizza.price).to.equal();
+    expect(testPizza.price).to.equal(16);
   });
 });
