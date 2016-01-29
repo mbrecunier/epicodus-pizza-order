@@ -15,94 +15,101 @@
       </div>
 
       <div class="row">
-        <div class="col-sm-8" id="order-display">
+        <div class="col-xs-8" id="order-display">
           <form id="order-form">
+            <div class="row">
+              <div class="col-md-6">
 
-            <div class="form-group">
-              <label>Size</label>
-              <div class="radio">
-                <label><input name="size" type="radio" value="small">Small</label>
-              </div>
-              <div class="radio">
-                <label><input name="size" type="radio" value="medium">Medium</label>
-              </div>
-              <div class="radio">
-                <label><input name="size" type="radio" value="large">Large</label>
-              </div>
-            </div>
+                <div class="form-group">
+                  <label>Size:</label>
+                  <div class="radio">
+                    <label><input name="size" type="radio" value="small">Small</label>
+                  </div>
+                  <div class="radio">
+                    <label><input name="size" type="radio" value="medium" checked>Medium</label>
+                  </div>
+                  <div class="radio">
+                    <label><input name="size" type="radio" value="large">Large</label>
+                  </div>
+                </div>
 
-            <div class="form-group">
-              <label>Crust</label>
-              <div class="radio">
-                <label><input name="crust" type="radio" value="thin">Thin</label>
-              </div>
-              <div class="radio">
-                <label><input name="crust" type="radio" value="pan">Pan</label>
-              </div>
-              <div class="radio">
-                <label><input name="crust" type="radio" value="stuffed">Stuffed</label>
-              </div>
-            </div>
+                <div class="form-group">
+                  <label>Cheese:</label>
+                  <div class="radio">
+                    <label><input name="cheese" type="radio" value="yes" checked>Yes</label>
+                  </div>
+                  <div class="radio">
+                    <label><input name="cheese" type="radio" value="no">No</label>
+                  </div>
+                </div>
 
-            <div class="form-group">
-              <label>Cheese</label>
-              <div class="radio">
-                <label><input name="cheese" type="radio" value="yes">Yes</label>
+                <div class="form-group">
+                  <label>Meats:</label>
+                  <div class="checkbox">
+                    <label><input name="meats" type="checkbox" value="pepperoni">Pepperoni</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="meats" type="checkbox" value="bacon">Bacon</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="meats" type="checkbox" value="sausage">Sausage</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="meats" type="checkbox" value="chicken">Chicken</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="meats" type="checkbox" value="steak">Steak</label>
+                  </div>
+                </div>
               </div>
-              <div class="radio">
-                <label><input name="cheese" type="radio" value="no">No</label>
-              </div>
-            </div>
 
-            <div class="form-group">
-              <label>Vegetables</label>
-              <div class="checkbox">
-                <label><input name="vegetables" type="checkbox" value="spinach">Spinach</label>
-              </div>
-              <div class="checkbox">
-                <label><input name="vegetables" type="checkbox" value="olives">Olives</label>
-              </div>
-              <div class="checkbox">
-                <label><input name="vegetables" type="checkbox" value="bell-peppers">Bell Peppers</label>
-              </div>
-              <div class="checkbox">
-                <label><input name="vegetables" type="checkbox" value="artichoke-hearts">Artichoke Hearts</label>
-              </div>
-              <div class="checkbox">
-                <label><input name="vegetables" type="checkbox" value="mushrooms">Mushrooms</label>
-              </div>
-              <div class="checkbox">
-                <label><input name="vegetables" type="checkbox" value="squash">Squash</label>
-              </div>
-              <div class="checkbox">
-                <label><input name="vegetables" type="checkbox" value="sun-dried-tomatoes">Sun-dried Tomatoes</label>
-              </div>
-            </div>
+              <div class="col-md-6">
 
-            <div class="form-group">
-              <label>Meats</label>
-              <div class="checkbox">
-                <label><input name="meats" type="checkbox" value="pepperoni">Pepperoni</label>
-              </div>
-              <div class="checkbox">
-                <label><input name="meats" type="checkbox" value="bacon">Bacon</label>
-              </div>
-              <div class="checkbox">
-                <label><input name="meats" type="checkbox" value="sausage">Sausage</label>
-              </div>
-              <div class="checkbox">
-                <label><input name="meats" type="checkbox" value="chicken">Chicken</label>
-              </div>
-              <div class="checkbox">
-                <label><input name="meats" type="checkbox" value="steak">Steak</label>
+                <div class="form-group">
+                  <label>Crust:</label>
+                  <div class="radio">
+                    <label><input name="crust" type="radio" value="thin">Thin</label>
+                  </div>
+                  <div class="radio">
+                    <label><input name="crust" type="radio" value="pan" checked>Pan</label>
+                  </div>
+                  <div class="radio">
+                    <label><input name="crust" type="radio" value="stuffed">Stuffed</label>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label>Vegetables:</label>
+                  <div class="checkbox">
+                    <label><input name="vegetables" type="checkbox" value="spinach">Spinach</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="vegetables" type="checkbox" value="olives">Olives</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="vegetables" type="checkbox" value="bell-peppers">Bell Peppers</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="vegetables" type="checkbox" value="artichoke-hearts">Artichoke Hearts</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="vegetables" type="checkbox" value="mushrooms">Mushrooms</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="vegetables" type="checkbox" value="squash">Squash</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input name="vegetables" type="checkbox" value="sun-dried-tomatoes">Sun-dried Tomatoes</label>
+                  </div>
+                </div>
               </div>
             </div>
             <button class="btn btn-default" type="submit">Calculate Price</button>
           </form>
         </div>
 
-        <div class="col-sm-4" id="price-display">
-
+        <div class="col-xs-4" id="price-display">
+          <p>Total: $10</p>
         </div>
       </div>
 
