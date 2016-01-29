@@ -1,0 +1,9 @@
+#price-display {
+  border: solid 1px black;
+  padding: 10px;
+  text-align: center;
+}
+
+.form-group {
+  padding-bottom: 10px;
+}
