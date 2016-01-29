@@ -34,7 +34,6 @@ $(document).ready(function() {
 
   $('#order-form').submit(function(event) {
     event.preventDefault();
-    //grab input from form
     var size = $('input[name=size]:checked').val();
     var crust = $('input[name=crust]:checked').val();
     var cheese = $('input[name=cheese]:checked').val();
@@ -44,12 +43,10 @@ $(document).ready(function() {
     var meats = $('input:checkbox[name=meats]:checked').map(function() {
         return this.value;
       }).get();
-    //make Pizza
+
     var newPizza = new Pizza(size, crust, cheese, vegetables, meats);
-    //calculate price
     newPizza.calculatePrice();
 
-    //display price
     $('#price-display').text(newPizza.price);
 
   });
