@@ -21,7 +21,7 @@ Pizza.prototype.calculatePrice = function() {
     this.price += 2;
   }
 
-  if (this.cheese === false) {
+  if (this.cheese === 'no') {
     this.price -= 1;
   }
 
@@ -33,3 +33,25 @@ Pizza.prototype.calculatePrice = function() {
     this.price += 2.5;
   }
 }
+
+$(document).ready(function() {
+
+  $('#order-form').submit(function(event) {
+    event.preventDefault();
+    //grab input from form
+    //make Pizza
+    var size = $('input[name=size]:checked').val();
+    var crust = $('input[name=crust]:checked').val();
+    var cheese = $('input[name=cheese]:checked').val();
+    var vegetables = [];
+    var meats = [];
+    var newPizza = new Pizza(size, crust, cheese, vegetables, meats);
+    //calculate price
+    newPizza.calculatePrice();
+
+    //display price
+    $('#price-display').text(newPizza.price);
+
+  });
+
+});
