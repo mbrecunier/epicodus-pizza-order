@@ -1,11 +1,10 @@
 describe('Pizza', function() {
   it('creates a new Pizza object with the following properties', function() {
-    var myPizza = new Pizza();
-    expect(myPizza.size).to.equal()
-    expect(myPizza.crust).to.equal();
-    expect(myPizza.cheeses).to.equal([])
-    expect(myPizza.vegetables).to.eql([]);
-    expect(myPizza.meats).to.eql([]);
-    expect(myPizza.price).to.equal();
+    var testPizza = new Pizza('large', 'pan', true, ['spinach', 'olives'], ['pepperoni', 'bacon']);
+    expect(testPizza.size).to.equal('large');
+    expect(testPizza.crust).to.equal('pan');
+    expect(testPizza.cheese).to.equal(true);
+    expect(testPizza.vegetables).to.eql(['spinach', 'olives']);
+    expect(testPizza.meats).to.eql(['pepperoni', 'bacon']);
   });
 });
