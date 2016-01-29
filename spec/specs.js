@@ -12,4 +12,9 @@ describe('Pizza', function() {
     testPizza.calculatePrice();
     expect(testPizza.price).to.equal(15);
   });
+  it('has a method to generate a short description', function() {
+    var testPizza = new Pizza('large', 'pan', 'yes', ['spinach', 'olives'], ['pepperoni', 'bacon']);
+    testPizza.calculatePrice();
+    expect(testPizza.shortDescription()).to.equal("A large pan pizza: $23");
+  })
 });
