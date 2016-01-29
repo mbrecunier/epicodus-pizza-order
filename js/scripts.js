@@ -39,6 +39,13 @@ Pizza.prototype.shortDescription = function() {
   return "A " + this.size + " " + this.crust + " pizza: $" + this.price;
 }
 
+var displayPizzaDetails = function() {
+  $('#pizza-details').show();
+  $('#pizza-details h4').text(newPizza.shortDescription());
+  $('#vegetables').text(newPizza.vegetables.join(", "));
+  $('#meats').text(newPizza.meats.join(", "));
+}
+
 $(document).ready(function() {
   $('#order-form').submit(function(event) {
     event.preventDefault();
@@ -56,9 +63,17 @@ $(document).ready(function() {
     //calculate price based on user input
     newPizza.calculatePrice();
     //display each pizza as a list item
-    $('#pizza-list').append('<li>' + newPizza.shortDescription() + '</li>');
+    $('#pizza-list').append('<li><span class="pizza">' + newPizza.shortDescription() + '</span></li>');
     //reset form buttons back to default
     document.getElementById("order-form").reset();
+
+    $(".pizza").last().click(function() {
+      $('#pizza-details').show();
+      $('#pizza-details h4').text(newPizza.shortDescription());
+      $('#vegetables').text(newPizza.vegetables.join(", "));
+      $('#meats').text(newPizza.meats.join(", "));
+    });
   });
+
 
 });
