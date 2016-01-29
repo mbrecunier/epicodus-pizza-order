@@ -2,12 +2,110 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <script src="../js/jquery-1.12.0.js"></script>
+    <script src="js/jquery-1.12.0.js"></script>
     <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <title></title>
+    <title>Pizza Order</title>
   </head>
   <body>
+    <div class="container">
+      <div class="page-header">
+        <h1>Choose Your Pizza</h1>
+      </div>
 
+      <div class="row">
+        <div class="col-sm-8" id="order-display">
+          <form id="order-form">
+
+            <div class="form-group">
+              <label>Size</label>
+              <div class="radio">
+                <label><input name="size" type="radio">Small</label>
+              </div>
+              <div class="radio">
+                <label><input name="size" type="radio">Medium</label>
+              </div>
+              <div class="radio">
+                <label><input name="size" type="radio">Large</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Crust</label>
+              <div class="radio">
+                <label><input name="crust" type="radio">Thin</label>
+              </div>
+              <div class="radio">
+                <label><input name="crust" type="radio">Pan</label>
+              </div>
+              <div class="radio">
+                <label><input name="crust" type="radio">Stuffed</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Cheese</label>
+              <div class="radio">
+                <label><input name="cheese" type="radio">Yes</label>
+              </div>
+              <div class="radio">
+                <label><input name="cheese" type="radio">No</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Vegetables</label>
+              <div class="checkbox">
+                <label><input type="checkbox">Spinach</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox">Olives</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox">Bell Peppers</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox">Artichoke Hearts</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox">Mushrooms</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox">Squash</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox">Sun-dried Tomatoes</label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label>Meats</label>
+              <div class="checkbox">
+                <label><input type="checkbox">Pepperoni</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox">Bacon</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox">Sausage</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox">Chicken</label>
+              </div>
+              <div class="checkbox">
+                <label><input type="checkbox">Steak</label>
+              </div>
+            </div>
+            <button class="btn btn-default" type="submit">Calculate Price</button>
+          </form>
+        </div>
+
+        <div class="col-sm-4" id="price-display">
+
+        </div>
+      </div>
+
+    </div>
   </body>
 </html>
