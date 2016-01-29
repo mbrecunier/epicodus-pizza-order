@@ -31,7 +31,6 @@ Pizza.prototype.calculatePrice = function() {
 }
 
 $(document).ready(function() {
-
   $('#order-form').submit(function(event) {
     event.preventDefault();
     var size = $('input[name=size]:checked').val();
@@ -47,8 +46,9 @@ $(document).ready(function() {
     var newPizza = new Pizza(size, crust, cheese, vegetables, meats);
     newPizza.calculatePrice();
 
-    $('#price-display').text(newPizza.price);
+    $('#price-display').text('Total: $' + newPizza.price);
 
+    document.getElementById("order-form").reset();
   });
 
 });
